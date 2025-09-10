@@ -1,0 +1,13 @@
+steps:
+  - name: 'gcr.io/cloud-builders/gcloud'
+    args:
+    - 'run'
+    - 'deploy'
+    - 'cloud-run-ex-service'
+    - '--source'
+    - '.'
+    - '--region'
+    - 'us-central1'
+    - '--allow-unauthenticated'
+    - '--set-env-vars'
+    - '$(cat .env | tr "\n" ",")'
