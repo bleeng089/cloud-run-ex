@@ -9,5 +9,5 @@ steps:
     - '--region'
     - 'us-central1'
     - '--allow-unauthenticated'
-    - '--set-env-vars'
-    - '$(cat .env | tr "\n" ",")'
+    - '--env-vars-file'
+    - 'env-vars.yaml'
