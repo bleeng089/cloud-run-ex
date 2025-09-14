@@ -11,3 +11,7 @@ steps:
     - '--allow-unauthenticated'
     - '--env-vars-file'
     - 'env-vars.yaml'
+    - '--labels'
+    - 'branch=main'
+    - '--revision-suffix'
+    - 'main'
